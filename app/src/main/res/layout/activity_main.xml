@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        tools:ignore="MissingConstraints">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="match_parent"
+            android:id="@+id/image_slider"
+            app:iss_auto_cycle="true"
+            app:iss_placeholder="@drawable/background"
+            app:iss_error_image="@drawable/background"
+            app:iss_delay="0"
+            app:iss_period="1000"
+            app:iss_corner_radius="5"
+            android:layout_height="250dp"
+            tools:ignore="MissingConstraints">
+        </com.denzcoskun.imageslider.ImageSlider>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/movieHeader"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:fontFamily="serif"
+            android:text="Movie Name"
+            android:textColor="#4F63D1"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/movieBody"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="serif"
+            android:text="RocknRolla"
+            android:textColor="#959393"
+            android:layout_marginLeft="15sp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/dateHeader"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:fontFamily="serif"
+            android:text="Release Date"
+            android:textColor="#4F63D1"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/dateBody"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="serif"
+            android:text="2008"
+            android:textColor="#959393"
+            android:layout_marginLeft="15sp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/actorsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:fontFamily="serif"
+            android:text="Actors"
+            android:textColor="#4F63D1"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/actor1Body"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="serif"
+            android:text="Tom Wilkinson"
+            android:textColor="#959393"
+            android:layout_marginLeft="15sp"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/actor2Body"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="serif"
+            android:text="Gerard Butler"
+            android:textColor="#959393"
+            android:layout_marginLeft="15sp"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/actor3Body"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="serif"
+            android:text="Thandiwe Newton"
+            android:textColor="#959393"
+            android:layout_marginLeft="15sp"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/descriptionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:fontFamily="serif"
+            android:text="Synopsis"
+            android:textColor="#4F63D1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/descriptionBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:fontFamily="serif"
+            android:text="When a Russian mobster orchestrates a crooked land deal, millions of dollars are up for grabs, drawing in the entire London underworld into a feeding frenzy at a time when the old criminal regime is losing turf to a wealthy foreign mob."
+            android:textColor="#959393"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Show More" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
